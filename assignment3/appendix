@@ -1,0 +1,1111 @@
+In the exercise session it was explained to submit only the best model's WEKA output for each task.
+
+Task 1:
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.01 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H 1
+Relation:     firstset
+Instances:    120
+Attributes:   40
+              XY_correl
+              XZ_correl
+              YZ_correl
+              XY_cross_product_per_window[0]
+              XY_cross_product_per_window[1]
+              XZ_cross_product_per_window[0]
+              XZ_cross_product_per_window[1]
+              YZ_cross_product_per_window[0]
+              YZ_cross_product_per_window[1]
+              XY_cross_product_total
+              XZ_cross_product_total
+              YZ_cross_product_total
+              DC_per_window_z[0]
+              DC_per_window_z[1]
+              DC_total_z
+              Energy_per_window_z[0]
+              Energy_per_window_z[1]
+              Energy_total_z
+              Entropy_per_window_z[0]
+              Entropy_per_window_z[1]
+              Entropy_total_z
+              DC_per_window_y[0]
+              DC_per_window_y[1]
+              DC_total_y
+              Energy_per_window_y[0]
+              Energy_per_window_y[1]
+              Energy_total_y
+              Entropy_per_window_y[0]
+              Entropy_per_window_y[1]
+              Entropy_total_y
+              DC_per_window_x[0]
+              DC_per_window_x[1]
+              DC_total_x
+              Energy_per_window_x[0]
+              Energy_per_window_x[1]
+              Energy_total_x
+              Entropy_per_window_x[0]
+              Entropy_per_window_x[1]
+              Entropy_total_x
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -2.193542818246473
+    Node 2    4.969023372023374
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    2.1930653692285724
+    Node 2    -4.967909399547851
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.25627025274879756
+    Attrib XY_correl    -2.0587070187125467
+    Attrib XZ_correl    -2.1548574659979374
+    Attrib YZ_correl    -2.1625227042821797
+    Attrib XY_cross_product_per_window[0]    0.8390259239366378
+    Attrib XY_cross_product_per_window[1]    0.09309207050353142
+    Attrib XZ_cross_product_per_window[0]    0.540886209366644
+    Attrib XZ_cross_product_per_window[1]    -0.8510568624371689
+    Attrib YZ_cross_product_per_window[0]    1.4688309176271739
+    Attrib YZ_cross_product_per_window[1]    0.2035382479450543
+    Attrib XY_cross_product_total    -0.16421022013733527
+    Attrib XZ_cross_product_total    0.03673512081476094
+    Attrib YZ_cross_product_total    0.9654315722254214
+    Attrib DC_per_window_z[0]    -0.5488137860858998
+    Attrib DC_per_window_z[1]    -0.2681908196954529
+    Attrib DC_total_z    -0.019595505462612343
+    Attrib Energy_per_window_z[0]    -0.057627056425340016
+    Attrib Energy_per_window_z[1]    -1.3001741668519327
+    Attrib Energy_total_z    0.241082457237
+    Attrib Entropy_per_window_z[0]    0.062301505365125374
+    Attrib Entropy_per_window_z[1]    -1.002060135101175
+    Attrib Entropy_total_z    0.9024232854314267
+    Attrib DC_per_window_y[0]    0.7432600216186778
+    Attrib DC_per_window_y[1]    -0.9075740225772734
+    Attrib DC_total_y    0.5445690603634159
+    Attrib Energy_per_window_y[0]    -1.2114027200834563
+    Attrib Energy_per_window_y[1]    -0.53131235630308
+    Attrib Energy_total_y    -0.47750413617253146
+    Attrib Entropy_per_window_y[0]    -1.3146489916237527
+    Attrib Entropy_per_window_y[1]    -0.6565057560303265
+    Attrib Entropy_total_y    0.6321765417096664
+    Attrib DC_per_window_x[0]    -0.008533343775128868
+    Attrib DC_per_window_x[1]    -0.021785802196100684
+    Attrib DC_total_x    0.1536761849738491
+    Attrib Energy_per_window_x[0]    1.2885758860483323
+    Attrib Energy_per_window_x[1]    1.304854088701242
+    Attrib Energy_total_x    -0.48895061809456764
+    Attrib Entropy_per_window_x[0]    0.5785469669445252
+    Attrib Entropy_per_window_x[1]    1.2135583395444087
+    Attrib Entropy_total_x    1.5878978364815488
+Class 1
+    Input
+    Node 0
+Class 2
+    Input
+    Node 1
+
+
+Time taken to build model: 0.07 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          98               81.6667 %
+Incorrectly Classified Instances        22               18.3333 %
+Kappa statistic                          0.6333
+Mean absolute error                      0.2889
+Root mean squared error                  0.3727
+Relative absolute error                 57.7781 %
+Root relative squared error             74.5344 %
+Total Number of Instances              120     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,750    0,117    0,865      0,750    0,804      0,639    0,871     0,902     1
+                 0,883    0,250    0,779      0,883    0,828      0,639    0,871     0,819     2
+Weighted Avg.    0,817    0,183    0,822      0,817    0,816      0,639    0,871     0,861     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 45 15 |  a = 1
+  7 53 |  b = 2
+
+Task 2:
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.2 -M 0.3 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     firstset
+Instances:    120
+Attributes:   40
+              XY_correl
+              XZ_correl
+              YZ_correl
+              XY_cross_product_per_window[0]
+              XY_cross_product_per_window[1]
+              XZ_cross_product_per_window[0]
+              XZ_cross_product_per_window[1]
+              YZ_cross_product_per_window[0]
+              YZ_cross_product_per_window[1]
+              XY_cross_product_total
+              XZ_cross_product_total
+              YZ_cross_product_total
+              DC_per_window_z[0]
+              DC_per_window_z[1]
+              DC_total_z
+              Energy_per_window_z[0]
+              Energy_per_window_z[1]
+              Energy_total_z
+              Entropy_per_window_z[0]
+              Entropy_per_window_z[1]
+              Entropy_total_z
+              DC_per_window_y[0]
+              DC_per_window_y[1]
+              DC_total_y
+              Energy_per_window_y[0]
+              Energy_per_window_y[1]
+              Energy_total_y
+              Entropy_per_window_y[0]
+              Entropy_per_window_y[1]
+              Entropy_total_y
+              DC_per_window_x[0]
+              DC_per_window_x[1]
+              DC_total_x
+              Energy_per_window_x[0]
+              Energy_per_window_x[1]
+              Energy_total_x
+              Entropy_per_window_x[0]
+              Entropy_per_window_x[1]
+              Entropy_total_x
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    0.21683115273034195
+    Node 2    -0.19814704542944295
+    Node 3    -1.659782519129731
+    Node 4    2.7815871151283242
+    Node 5    2.6121547036436925
+    Node 6    -1.7881972355293363
+    Node 7    1.5503004779325835
+    Node 8    3.3572442518618066
+    Node 9    -1.3467049877938764
+    Node 10    -0.7778855978590561
+    Node 11    -0.8226244643891715
+    Node 12    3.0878368943074057
+    Node 13    -3.366227583157784
+    Node 14    1.4307872063806424
+    Node 15    0.13266550393162882
+    Node 16    -3.2071009576666603
+    Node 17    -1.331458928995422
+    Node 18    -1.742538161354839
+    Node 19    -3.834347851928771
+    Node 20    -0.19239083851295743
+    Node 21    0.20256784476058476
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.2501891462165099
+    Node 2    0.1941493419431318
+    Node 3    1.6219643713825331
+    Node 4    -2.7817139358373106
+    Node 5    -2.6557288191858768
+    Node 6    1.727384964823538
+    Node 7    -1.5819798651926744
+    Node 8    -3.2908629719369737
+    Node 9    1.2929934063282078
+    Node 10    0.790088940925173
+    Node 11    0.86867447427997
+    Node 12    -3.0861642682535995
+    Node 13    3.415179168846539
+    Node 14    -1.3964431197106315
+    Node 15    -0.03995276229700017
+    Node 16    3.2423429100326353
+    Node 17    1.3368370441256112
+    Node 18    1.7624549447497935
+    Node 19    3.827182528413813
+    Node 20    0.21128410756564128
+    Node 21    -0.24541701412965974
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.06436481248511057
+    Attrib XY_correl    0.010948296466957427
+    Attrib XZ_correl    -0.09712551812810441
+    Attrib YZ_correl    0.1297513118847721
+    Attrib XY_cross_product_per_window[0]    0.0871201486674493
+    Attrib XY_cross_product_per_window[1]    0.013547435259750992
+    Attrib XZ_cross_product_per_window[0]    0.08509469416252759
+    Attrib XZ_cross_product_per_window[1]    0.02957277426007327
+    Attrib YZ_cross_product_per_window[0]    0.08538025676723636
+    Attrib YZ_cross_product_per_window[1]    -0.049540369889879705
+    Attrib XY_cross_product_total    0.06025199343541774
+    Attrib XZ_cross_product_total    0.029842802182410463
+    Attrib YZ_cross_product_total    -0.05262768233026548
+    Attrib DC_per_window_z[0]    0.08488840844711634
+    Attrib DC_per_window_z[1]    0.09362030586862874
+    Attrib DC_total_z    0.001002128952723508
+    Attrib Energy_per_window_z[0]    0.0361645385579435
+    Attrib Energy_per_window_z[1]    0.04615129803928476
+    Attrib Energy_total_z    0.09981818211234314
+    Attrib Entropy_per_window_z[0]    -0.04788375444324373
+    Attrib Entropy_per_window_z[1]    -0.018475123633958344
+    Attrib Entropy_total_z    -0.05493455905439495
+    Attrib DC_per_window_y[0]    0.09928788722173801
+    Attrib DC_per_window_y[1]    0.06668100605733843
+    Attrib DC_total_y    0.027366153032396298
+    Attrib Energy_per_window_y[0]    0.09633390861794851
+    Attrib Energy_per_window_y[1]    0.0021833465921487914
+    Attrib Energy_total_y    0.03753618974808254
+    Attrib Entropy_per_window_y[0]    -0.010176374979635965
+    Attrib Entropy_per_window_y[1]    -0.010452901136533766
+    Attrib Entropy_total_y    -0.05245108700655244
+    Attrib DC_per_window_x[0]    0.16758873201163485
+    Attrib DC_per_window_x[1]    0.07308551073073813
+    Attrib DC_total_x    0.06570481202533503
+    Attrib Energy_per_window_x[0]    0.18511686106278682
+    Attrib Energy_per_window_x[1]    0.031976141053847724
+    Attrib Energy_total_x    0.051288191570706874
+    Attrib Entropy_per_window_x[0]    0.002179231031997019
+    Attrib Entropy_per_window_x[1]    -0.08520387663269914
+    Attrib Entropy_total_x    -0.0337898202475359
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    0.3730708144019167
+    Attrib XY_correl    0.3044068614846112
+    Attrib XZ_correl    -1.269247032586696
+    Attrib YZ_correl    1.2137113102837354
+    Attrib XY_cross_product_per_window[0]    -0.06309334271416506
+    Attrib XY_cross_product_per_window[1]    0.1917788369717568
+    Attrib XZ_cross_product_per_window[0]    0.14665194072062052
+    Attrib XZ_cross_product_per_window[1]    -0.061750652631394905
+    Attrib YZ_cross_product_per_window[0]    -0.028062433264211088
+    Attrib YZ_cross_product_per_window[1]    0.18442484884356355
+    Attrib XY_cross_product_total    -0.18802720456614103
+    Attrib XZ_cross_product_total    0.21401635396904836
+    Attrib YZ_cross_product_total    -0.12129616004616213
+    Attrib DC_per_window_z[0]    0.8168186631234687
+    Attrib DC_per_window_z[1]    -0.19197683825181144
+    Attrib DC_total_z    -0.564374621669468
+    Attrib Energy_per_window_z[0]    -0.19954775441422995
+    Attrib Energy_per_window_z[1]    0.29609872744310917
+    Attrib Energy_total_z    0.23111737636115534
+    Attrib Entropy_per_window_z[0]    -0.37330651926510044
+    Attrib Entropy_per_window_z[1]    0.2191699378684974
+    Attrib Entropy_total_z    -0.04701972520222298
+    Attrib DC_per_window_y[0]    0.03138519181923112
+    Attrib DC_per_window_y[1]    -0.163692790880873
+    Attrib DC_total_y    0.12512993624327368
+    Attrib Energy_per_window_y[0]    -0.02121162675311793
+    Attrib Energy_per_window_y[1]    -0.07313511894876584
+    Attrib Energy_total_y    0.025416117142508937
+    Attrib Entropy_per_window_y[0]    0.17620531436022466
+    Attrib Entropy_per_window_y[1]    -0.061349450562326525
+    Attrib Entropy_total_y    0.38255561070460936
+    Attrib DC_per_window_x[0]    0.32123750222147907
+    Attrib DC_per_window_x[1]    -0.21219897645886568
+    Attrib DC_total_x    0.002166323785901794
+    Attrib Energy_per_window_x[0]    0.4999084982744762
+    Attrib Energy_per_window_x[1]    -0.20367785717702036
+    Attrib Energy_total_x    0.31604245471877884
+    Attrib Entropy_per_window_x[0]    0.298783591957522
+    Attrib Entropy_per_window_x[1]    -0.3640815285256779
+    Attrib Entropy_total_x    -0.20803904811420182
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.6965613585352193
+    Attrib XY_correl    -0.6136705589956375
+    Attrib XZ_correl    2.10766795509586
+    Attrib YZ_correl    -2.0140995717716703
+    Attrib XY_cross_product_per_window[0]    0.08574344656036048
+    Attrib XY_cross_product_per_window[1]    -0.22580511762557282
+    Attrib XZ_cross_product_per_window[0]    -0.06549367445394837
+    Attrib XZ_cross_product_per_window[1]    0.03735674899045673
+    Attrib YZ_cross_product_per_window[0]    0.06948504363332529
+    Attrib YZ_cross_product_per_window[1]    -0.385146217177515
+    Attrib XY_cross_product_total    0.3749627449209956
+    Attrib XZ_cross_product_total    -0.25323385939409254
+    Attrib YZ_cross_product_total    0.18114331897308125
+    Attrib DC_per_window_z[0]    -1.3114254353025598
+    Attrib DC_per_window_z[1]    0.3203745307934453
+    Attrib DC_total_z    0.9611271155007031
+    Attrib Energy_per_window_z[0]    0.33361562022776337
+    Attrib Energy_per_window_z[1]    -0.47023302396991207
+    Attrib Energy_total_z    -0.4471469794756494
+    Attrib Entropy_per_window_z[0]    0.5917311045428564
+    Attrib Entropy_per_window_z[1]    -0.41851744401344837
+    Attrib Entropy_total_z    0.06685015137460043
+    Attrib DC_per_window_y[0]    -0.06962481807648785
+    Attrib DC_per_window_y[1]    0.20254184126155303
+    Attrib DC_total_y    -0.18738676133003065
+    Attrib Energy_per_window_y[0]    -0.04590596774428875
+    Attrib Energy_per_window_y[1]    0.07068947780818852
+    Attrib Energy_total_y    -0.06938801783420072
+    Attrib Entropy_per_window_y[0]    -0.3373449544630999
+    Attrib Entropy_per_window_y[1]    0.047320609638423015
+    Attrib Entropy_total_y    -0.649707739951297
+    Attrib DC_per_window_x[0]    -0.6031476055371532
+    Attrib DC_per_window_x[1]    0.47664729274387124
+    Attrib DC_total_x    0.08564486355156652
+    Attrib Energy_per_window_x[0]    -0.7007418083242015
+    Attrib Energy_per_window_x[1]    0.4093134762679329
+    Attrib Energy_total_x    -0.5562072729057073
+    Attrib Entropy_per_window_x[0]    -0.4728298564030385
+    Attrib Entropy_per_window_x[1]    0.5241275015333787
+    Attrib Entropy_total_x    0.311979806511416
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.6605804271626669
+    Attrib XY_correl    -0.5274053776250651
+    Attrib XZ_correl    2.0485183435474026
+    Attrib YZ_correl    -1.9005691473647053
+    Attrib XY_cross_product_per_window[0]    0.04236594751416157
+    Attrib XY_cross_product_per_window[1]    -0.2122394765853281
+    Attrib XZ_cross_product_per_window[0]    -0.08793644980541926
+    Attrib XZ_cross_product_per_window[1]    0.05833150321668334
+    Attrib YZ_cross_product_per_window[0]    0.11300823940855358
+    Attrib YZ_cross_product_per_window[1]    -0.41012217900300196
+    Attrib XY_cross_product_total    0.38558777175030595
+    Attrib XZ_cross_product_total    -0.25879963607422485
+    Attrib YZ_cross_product_total    0.1933705434274746
+    Attrib DC_per_window_z[0]    -1.2303840301329745
+    Attrib DC_per_window_z[1]    0.3202425122258492
+    Attrib DC_total_z    0.8480941606394518
+    Attrib Energy_per_window_z[0]    0.30107622385003385
+    Attrib Energy_per_window_z[1]    -0.4197413927069373
+    Attrib Energy_total_z    -0.41301792125878484
+    Attrib Entropy_per_window_z[0]    0.5460013514043982
+    Attrib Entropy_per_window_z[1]    -0.3857397195244849
+    Attrib Entropy_total_z    0.04965984625050679
+    Attrib DC_per_window_y[0]    -0.0687548868019504
+    Attrib DC_per_window_y[1]    0.16324874480578658
+    Attrib DC_total_y    -0.1820314913671869
+    Attrib Energy_per_window_y[0]    -0.055525186939532754
+    Attrib Energy_per_window_y[1]    0.02699951659825038
+    Attrib Energy_total_y    -0.10167637064905839
+    Attrib Entropy_per_window_y[0]    -0.2982102094305739
+    Attrib Entropy_per_window_y[1]    0.08177981987530797
+    Attrib Entropy_total_y    -0.6528226983367176
+    Attrib DC_per_window_x[0]    -0.5506299954303014
+    Attrib DC_per_window_x[1]    0.43890545271518183
+    Attrib DC_total_x    0.10181162266086723
+    Attrib Energy_per_window_x[0]    -0.6655531412270304
+    Attrib Energy_per_window_x[1]    0.3518690961010547
+    Attrib Energy_total_x    -0.5076840578008961
+    Attrib Entropy_per_window_x[0]    -0.4646405927815205
+    Attrib Entropy_per_window_x[1]    0.50130064961121
+    Attrib Entropy_total_x    0.3149022568813149
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    0.4159910861607795
+    Attrib XY_correl    0.4301057837860789
+    Attrib XZ_correl    -1.3536419468015364
+    Attrib YZ_correl    1.2841076760185954
+    Attrib XY_cross_product_per_window[0]    -0.0015192375147800887
+    Attrib XY_cross_product_per_window[1]    0.13848813851732303
+    Attrib XZ_cross_product_per_window[0]    0.09895737627568081
+    Attrib XZ_cross_product_per_window[1]    -0.04813345583388913
+    Attrib YZ_cross_product_per_window[0]    -0.05718246837763698
+    Attrib YZ_cross_product_per_window[1]    0.2966232680886332
+    Attrib XY_cross_product_total    -0.19408776887106316
+    Attrib XZ_cross_product_total    0.17932049003578227
+    Attrib YZ_cross_product_total    -0.16739573157271018
+    Attrib DC_per_window_z[0]    0.8075893866583267
+    Attrib DC_per_window_z[1]    -0.1793358988822742
+    Attrib DC_total_z    -0.6243781366633087
+    Attrib Energy_per_window_z[0]    -0.2659716482073284
+    Attrib Energy_per_window_z[1]    0.32311278234341395
+    Attrib Energy_total_z    0.25599754095950067
+    Attrib Entropy_per_window_z[0]    -0.4308974537219617
+    Attrib Entropy_per_window_z[1]    0.23766283645788228
+    Attrib Entropy_total_z    -0.05116803594872525
+    Attrib DC_per_window_y[0]    0.05130155922443237
+    Attrib DC_per_window_y[1]    -0.1208286743281734
+    Attrib DC_total_y    0.1192335336080991
+    Attrib Energy_per_window_y[0]    0.01131984763871803
+    Attrib Energy_per_window_y[1]    -0.07128481307344339
+    Attrib Energy_total_y    0.07619339848860801
+    Attrib Entropy_per_window_y[0]    0.16426044051434147
+    Attrib Entropy_per_window_y[1]    -0.04104815644744655
+    Attrib Entropy_total_y    0.4489123990512338
+    Attrib DC_per_window_x[0]    0.41466091179473735
+    Attrib DC_per_window_x[1]    -0.2249107632468621
+    Attrib DC_total_x    0.015158369335099224
+    Attrib Energy_per_window_x[0]    0.5247611216069509
+    Attrib Energy_per_window_x[1]    -0.17877169331943243
+    Attrib Energy_total_x    0.33183595997135895
+    Attrib Entropy_per_window_x[0]    0.3644969338537527
+    Attrib Entropy_per_window_x[1]    -0.3901126597195804
+    Attrib Entropy_total_x    -0.1482316710988623
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.3409222328176457
+    Attrib XY_correl    -0.28549833809261904
+    Attrib XZ_correl    1.2076578361273518
+    Attrib YZ_correl    -1.11284939780809
+    Attrib XY_cross_product_per_window[0]    0.05971035665321279
+    Attrib XY_cross_product_per_window[1]    -0.0969851244328855
+    Attrib XZ_cross_product_per_window[0]    -0.08434612331556358
+    Attrib XZ_cross_product_per_window[1]    0.0164381522700644
+    Attrib YZ_cross_product_per_window[0]    0.04979520129976296
+    Attrib YZ_cross_product_per_window[1]    -0.2098199743222079
+    Attrib XY_cross_product_total    0.20071697323990867
+    Attrib XZ_cross_product_total    -0.1589341820319562
+    Attrib YZ_cross_product_total    0.1290438291638877
+    Attrib DC_per_window_z[0]    -0.744550038976235
+    Attrib DC_per_window_z[1]    0.1912428540331819
+    Attrib DC_total_z    0.47785583095898604
+    Attrib Energy_per_window_z[0]    0.18709001832243083
+    Attrib Energy_per_window_z[1]    -0.2919908129163615
+    Attrib Energy_total_z    -0.25184670389163133
+    Attrib Entropy_per_window_z[0]    0.3743953366304329
+    Attrib Entropy_per_window_z[1]    -0.16508837288720304
+    Attrib Entropy_total_z    0.03751384490963432
+    Attrib DC_per_window_y[0]    -0.027547144673014234
+    Attrib DC_per_window_y[1]    0.1103107622012311
+    Attrib DC_total_y    -0.10294677214536585
+    Attrib Energy_per_window_y[0]    -0.02947521065158693
+    Attrib Energy_per_window_y[1]    0.0029477615372916315
+    Attrib Energy_total_y    -0.05828348918777673
+    Attrib Entropy_per_window_y[0]    -0.15288779527992005
+    Attrib Entropy_per_window_y[1]    0.10314640676584068
+    Attrib Entropy_total_y    -0.3024776474657601
+    Attrib DC_per_window_x[0]    -0.33410003367115004
+    Attrib DC_per_window_x[1]    0.28628164640313697
+    Attrib DC_total_x    0.033017939801775316
+    Attrib Energy_per_window_x[0]    -0.43218362144595646
+    Attrib Energy_per_window_x[1]    0.19166134025778264
+    Attrib Energy_total_x    -0.2882110374964824
+    Attrib Entropy_per_window_x[0]    -0.21729983174022802
+    Attrib Entropy_per_window_x[1]    0.34834820954494317
+    Attrib Entropy_total_x    0.21979096909496285
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.8479966305367198
+    Attrib XY_correl    -0.6890380332290094
+    Attrib XZ_correl    2.508974080387873
+    Attrib YZ_correl    -2.3854359939067398
+    Attrib XY_cross_product_per_window[0]    0.057103135262865076
+    Attrib XY_cross_product_per_window[1]    -0.26980715744043254
+    Attrib XZ_cross_product_per_window[0]    -0.15732926325566446
+    Attrib XZ_cross_product_per_window[1]    0.08653650638889711
+    Attrib YZ_cross_product_per_window[0]    0.1672471151961692
+    Attrib YZ_cross_product_per_window[1]    -0.5228781603637929
+    Attrib XY_cross_product_total    0.48407428691391446
+    Attrib XZ_cross_product_total    -0.31561059762655796
+    Attrib YZ_cross_product_total    0.24150878025901296
+    Attrib DC_per_window_z[0]    -1.5373870891882264
+    Attrib DC_per_window_z[1]    0.37967810379321504
+    Attrib DC_total_z    1.1053453311734736
+    Attrib Energy_per_window_z[0]    0.39567516787716056
+    Attrib Energy_per_window_z[1]    -0.5623750757695737
+    Attrib Energy_total_z    -0.5072583428752805
+    Attrib Entropy_per_window_z[0]    0.7084982506454439
+    Attrib Entropy_per_window_z[1]    -0.5105370726142664
+    Attrib Entropy_total_z    0.0337568276379771
+    Attrib DC_per_window_y[0]    -0.11114762091045773
+    Attrib DC_per_window_y[1]    0.20588424135222738
+    Attrib DC_total_y    -0.21048795785499602
+    Attrib Energy_per_window_y[0]    -0.08755780873944229
+    Attrib Energy_per_window_y[1]    0.10678491133397561
+    Attrib Energy_total_y    -0.1089765922729515
+    Attrib Entropy_per_window_y[0]    -0.39376172280415483
+    Attrib Entropy_per_window_y[1]    0.053798252365856086
+    Attrib Entropy_total_y    -0.8341539206305871
+    Attrib DC_per_window_x[0]    -0.6918270801627183
+    Attrib DC_per_window_x[1]    0.5874111838636513
+    Attrib DC_total_x    0.12903370991105073
+    Attrib Energy_per_window_x[0]    -0.8664832471323266
+    Attrib Energy_per_window_x[1]    0.4867896827565334
+    Attrib Energy_total_x    -0.6850752066918707
+    Attrib Entropy_per_window_x[0]    -0.562219219727816
+    Attrib Entropy_per_window_x[1]    0.6589495578711294
+    Attrib Entropy_total_x    0.42142988143007304
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    0.2864087738618875
+    Attrib XY_correl    0.28813389283665103
+    Attrib XZ_correl    -1.0245627074184094
+    Attrib YZ_correl    0.951595663412588
+    Attrib XY_cross_product_per_window[0]    -0.012414346646403403
+    Attrib XY_cross_product_per_window[1]    0.15572195590504176
+    Attrib XZ_cross_product_per_window[0]    0.09547490562715119
+    Attrib XZ_cross_product_per_window[1]    -0.050894602189195746
+    Attrib YZ_cross_product_per_window[0]    -0.03762032488218479
+    Attrib YZ_cross_product_per_window[1]    0.14889093722371144
+    Attrib XY_cross_product_total    -0.1866017126276841
+    Attrib XZ_cross_product_total    0.19421974128490863
+    Attrib YZ_cross_product_total    -0.13429973925893574
+    Attrib DC_per_window_z[0]    0.623682491558516
+    Attrib DC_per_window_z[1]    -0.10959987419991024
+    Attrib DC_total_z    -0.4471113523386578
+    Attrib Energy_per_window_z[0]    -0.10025724828457397
+    Attrib Energy_per_window_z[1]    0.24603700330348444
+    Attrib Energy_total_z    0.184256299814309
+    Attrib Entropy_per_window_z[0]    -0.3436777176567928
+    Attrib Entropy_per_window_z[1]    0.1515639015235664
+    Attrib Entropy_total_z    -0.11875765246995021
+    Attrib DC_per_window_y[0]    0.02763413129207996
+    Attrib DC_per_window_y[1]    -0.1559122542211503
+    Attrib DC_total_y    0.09194809489440095
+    Attrib Energy_per_window_y[0]    -0.008478945265262695
+    Attrib Energy_per_window_y[1]    -0.03714117154808382
+    Attrib Energy_total_y    0.03353170975154278
+    Attrib Entropy_per_window_y[0]    0.09759856131654575
+    Attrib Entropy_per_window_y[1]    -0.07027975810297699
+    Attrib Entropy_total_y    0.3308061844737208
+    Attrib DC_per_window_x[0]    0.3429664989872752
+    Attrib DC_per_window_x[1]    -0.11052817023957742
+    Attrib DC_total_x    0.0544164027587493
+    Attrib Energy_per_window_x[0]    0.3860457190498185
+    Attrib Energy_per_window_x[1]    -0.13592084353630438
+    Attrib Energy_total_x    0.2520348814820536
+    Attrib Entropy_per_window_x[0]    0.2438989695570393
+    Attrib Entropy_per_window_x[1]    -0.22511441317237985
+    Attrib Entropy_total_x    -0.08642342538443702
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    0.10881628935946239
+    Attrib XY_correl    0.09572208169473886
+    Attrib XZ_correl    -0.5822049674727873
+    Attrib YZ_correl    0.5448327823968151
+    Attrib XY_cross_product_per_window[0]    -0.004967161191756194
+    Attrib XY_cross_product_per_window[1]    -0.006096148225622861
+    Attrib XZ_cross_product_per_window[0]    0.08652076290741205
+    Attrib XZ_cross_product_per_window[1]    0.0354678781924796
+    Attrib YZ_cross_product_per_window[0]    0.01512298869612855
+    Attrib YZ_cross_product_per_window[1]    0.10836281993532294
+    Attrib XY_cross_product_total    -0.10182271233839729
+    Attrib XZ_cross_product_total    0.05153328244090185
+    Attrib YZ_cross_product_total    -0.056249518625069536
+    Attrib DC_per_window_z[0]    0.4137713852543349
+    Attrib DC_per_window_z[1]    -0.024469863292986185
+    Attrib DC_total_z    -0.21984412621553315
+    Attrib Energy_per_window_z[0]    -0.014880106176058158
+    Attrib Energy_per_window_z[1]    0.15000800661985547
+    Attrib Energy_total_z    0.1638449635744169
+    Attrib Entropy_per_window_z[0]    -0.1783315561982411
+    Attrib Entropy_per_window_z[1]    0.004199276050666479
+    Attrib Entropy_total_z    -0.1305692388313566
+    Attrib DC_per_window_y[0]    0.09424436474428072
+    Attrib DC_per_window_y[1]    -5.573158214456388E-4
+    Attrib DC_total_y    0.050252446922497536
+    Attrib Energy_per_window_y[0]    0.02017638679090165
+    Attrib Energy_per_window_y[1]    -0.015708930152858347
+    Attrib Energy_total_y    -0.017361018894901572
+    Attrib Entropy_per_window_y[0]    0.07156250889579294
+    Attrib Entropy_per_window_y[1]    -0.08517439488983967
+    Attrib Entropy_total_y    0.08602376159749463
+    Attrib DC_per_window_x[0]    0.19022265282620332
+    Attrib DC_per_window_x[1]    -0.08766239014843649
+    Attrib DC_total_x    -0.003879807765552033
+    Attrib Energy_per_window_x[0]    0.26809485536250677
+    Attrib Energy_per_window_x[1]    0.004912766756249893
+    Attrib Energy_total_x    0.20185907850041965
+    Attrib Entropy_per_window_x[0]    0.19394896314999802
+    Attrib Entropy_per_window_x[1]    -0.17987270811100772
+    Attrib Entropy_total_x    -0.09299517284950615
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    0.09334978686173434
+    Attrib XY_correl    0.12669979149603194
+    Attrib XZ_correl    -0.6335637523398993
+    Attrib YZ_correl    0.5763385406712341
+    Attrib XY_cross_product_per_window[0]    0.06366804843402478
+    Attrib XY_cross_product_per_window[1]    -0.0076744014855642875
+    Attrib XZ_cross_product_per_window[0]    0.09009642612750386
+    Attrib XZ_cross_product_per_window[1]    -0.0038081606956098953
+    Attrib YZ_cross_product_per_window[0]    0.031191088437878416
+    Attrib YZ_cross_product_per_window[1]    0.10838941161384015
+    Attrib XY_cross_product_total    -0.09877180001083251
+    Attrib XZ_cross_product_total    0.14857213916140585
+    Attrib YZ_cross_product_total    -0.08739528300017738
+    Attrib DC_per_window_z[0]    0.433068125701852
+    Attrib DC_per_window_z[1]    -0.072429891701625
+    Attrib DC_total_z    -0.22810164131741836
+    Attrib Energy_per_window_z[0]    -0.030406304065346005
+    Attrib Energy_per_window_z[1]    0.1024091312855121
+    Attrib Energy_total_z    0.20719472788778356
+    Attrib Entropy_per_window_z[0]    -0.22298078731399634
+    Attrib Entropy_per_window_z[1]    0.023662167824560026
+    Attrib Entropy_total_z    -0.03719053572468656
+    Attrib DC_per_window_y[0]    0.05667889654084156
+    Attrib DC_per_window_y[1]    -0.012851125572054544
+    Attrib DC_total_y    0.11650948262955231
+    Attrib Energy_per_window_y[0]    0.008727557943226974
+    Attrib Energy_per_window_y[1]    0.01954678554425013
+    Attrib Energy_total_y    0.04206133083393014
+    Attrib Entropy_per_window_y[0]    0.03790108970800127
+    Attrib Entropy_per_window_y[1]    -0.031173546655753084
+    Attrib Entropy_total_y    0.09719204875576111
+    Attrib DC_per_window_x[0]    0.30809294539661347
+    Attrib DC_per_window_x[1]    -0.10302588577280028
+    Attrib DC_total_x    0.016441981048719533
+    Attrib Energy_per_window_x[0]    0.27800868110029403
+    Attrib Energy_per_window_x[1]    -0.05829921966975122
+    Attrib Energy_total_x    0.20435290011273916
+    Attrib Entropy_per_window_x[0]    0.20721973483473435
+    Attrib Entropy_per_window_x[1]    -0.1316676942465601
+    Attrib Entropy_total_x    -0.01565507038184607
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -0.7672847379943107
+    Attrib XY_correl    -0.6316063218121677
+    Attrib XZ_correl    2.3579755647421505
+    Attrib YZ_correl    -2.2055065086722045
+    Attrib XY_cross_product_per_window[0]    0.10154636955536304
+    Attrib XY_cross_product_per_window[1]    -0.27409885404212725
+    Attrib XZ_cross_product_per_window[0]    -0.06333055120365164
+    Attrib XZ_cross_product_per_window[1]    0.02724471676374188
+    Attrib YZ_cross_product_per_window[0]    0.0901128770145186
+    Attrib YZ_cross_product_per_window[1]    -0.4652389671404739
+    Attrib XY_cross_product_total    0.4688470020155226
+    Attrib XZ_cross_product_total    -0.26428103334371206
+    Attrib YZ_cross_product_total    0.20306551913092125
+    Attrib DC_per_window_z[0]    -1.4321332602574017
+    Attrib DC_per_window_z[1]    0.36783176932162376
+    Attrib DC_total_z    1.0127162056438592
+    Attrib Energy_per_window_z[0]    0.34449840932552633
+    Attrib Energy_per_window_z[1]    -0.525789714195001
+    Attrib Energy_total_z    -0.49168066055494797
+    Attrib Entropy_per_window_z[0]    0.7090074686699709
+    Attrib Entropy_per_window_z[1]    -0.4538163178707135
+    Attrib Entropy_total_z    0.04162144946538602
+    Attrib DC_per_window_y[0]    -0.09255357795798372
+    Attrib DC_per_window_y[1]    0.1951769704431622
+    Attrib DC_total_y    -0.2375443220765837
+    Attrib Energy_per_window_y[0]    -0.019181352656203687
+    Attrib Energy_per_window_y[1]    0.08129887982722549
+    Attrib Energy_total_y    -0.1172276967117831
+    Attrib Entropy_per_window_y[0]    -0.3914269497115918
+    Attrib Entropy_per_window_y[1]    0.0826235118401045
+    Attrib Entropy_total_y    -0.7488401021482165
+    Attrib DC_per_window_x[0]    -0.654938637080487
+    Attrib DC_per_window_x[1]    0.5431658576690723
+    Attrib DC_total_x    0.13661685802271045
+    Attrib Energy_per_window_x[0]    -0.7912432993233551
+    Attrib Energy_per_window_x[1]    0.43357356794572083
+    Attrib Energy_total_x    -0.616944731857503
+    Attrib Entropy_per_window_x[0]    -0.5769220783516591
+    Attrib Entropy_per_window_x[1]    0.5954161761112101
+    Attrib Entropy_total_x    0.3647447608306205
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    0.8654721033753296
+    Attrib XY_correl    0.762208543599195
+    Attrib XZ_correl    -2.6261348188594424
+    Attrib YZ_correl    2.466719626505136
+    Attrib XY_cross_product_per_window[0]    -0.11746913080028996
+    Attrib XY_cross_product_per_window[1]    0.28373719758841187
+    Attrib XZ_cross_product_per_window[0]    0.09438463523636903
+    Attrib XZ_cross_product_per_window[1]    -0.04466982224848397
+    Attrib YZ_cross_product_per_window[0]    -0.10595336036681499
+    Attrib YZ_cross_product_per_window[1]    0.5701176107171867
+    Attrib XY_cross_product_total    -0.47670454054312716
+    Attrib XZ_cross_product_total    0.3965375630235599
+    Attrib YZ_cross_product_total    -0.2605603127193356
+    Attrib DC_per_window_z[0]    1.577726001458079
+    Attrib DC_per_window_z[1]    -0.38859978386704047
+    Attrib DC_total_z    -1.1924426139816027
+    Attrib Energy_per_window_z[0]    -0.4209338918685027
+    Attrib Energy_per_window_z[1]    0.607715901460677
+    Attrib Energy_total_z    0.4650977630713554
+    Attrib Entropy_per_window_z[0]    -0.7353949822063302
+    Attrib Entropy_per_window_z[1]    0.4873494426528323
+    Attrib Entropy_total_z    -0.10209854614620205
+    Attrib DC_per_window_y[0]    0.12729673041157713
+    Attrib DC_per_window_y[1]    -0.24810686032687043
+    Attrib DC_total_y    0.2672688628439784
+    Attrib Energy_per_window_y[0]    0.043320596825113133
+    Attrib Energy_per_window_y[1]    -0.13733784965591045
+    Attrib Energy_total_y    0.10403212931106715
+    Attrib Entropy_per_window_y[0]    0.42686669234694385
+    Attrib Entropy_per_window_y[1]    -0.019209384720718446
+    Attrib Entropy_total_y    0.9172915435525463
+    Attrib DC_per_window_x[0]    0.6961908378243095
+    Attrib DC_per_window_x[1]    -0.536301178580211
+    Attrib DC_total_x    -0.08785971239757699
+    Attrib Energy_per_window_x[0]    0.8858735927109941
+    Attrib Energy_per_window_x[1]    -0.503449722719298
+    Attrib Energy_total_x    0.7148370196078988
+    Attrib Entropy_per_window_x[0]    0.6389365648848161
+    Attrib Entropy_per_window_x[1]    -0.6816586419094557
+    Attrib Entropy_total_x    -0.4313929753788162
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -0.32934263158222143
+    Attrib XY_correl    -0.2940611484418381
+    Attrib XZ_correl    1.0437990396772665
+    Attrib YZ_correl    -1.0400169044283738
+    Attrib XY_cross_product_per_window[0]    0.011940819242480161
+    Attrib XY_cross_product_per_window[1]    -0.13558017542437564
+    Attrib XZ_cross_product_per_window[0]    -0.06350907638100085
+    Attrib XZ_cross_product_per_window[1]    0.013510769473466092
+    Attrib YZ_cross_product_per_window[0]    0.004714440711806002
+    Attrib YZ_cross_product_per_window[1]    -0.2024379811294119
+    Attrib XY_cross_product_total    0.18249746175203285
+    Attrib XZ_cross_product_total    -0.14296636543761032
+    Attrib YZ_cross_product_total    0.12092036003822479
+    Attrib DC_per_window_z[0]    -0.6402617341453033
+    Attrib DC_per_window_z[1]    0.140959384581717
+    Attrib DC_total_z    0.4361198862798617
+    Attrib Energy_per_window_z[0]    0.16204270327006254
+    Attrib Energy_per_window_z[1]    -0.26457366605816685
+    Attrib Energy_total_z    -0.2652938986422766
+    Attrib Entropy_per_window_z[0]    0.37847513570750285
+    Attrib Entropy_per_window_z[1]    -0.2051205314579703
+    Attrib Entropy_total_z    0.09006849034292222
+    Attrib DC_per_window_y[0]    -0.049556403307057954
+    Attrib DC_per_window_y[1]    0.10666414933469506
+    Attrib DC_total_y    -0.11168326079765546
+    Attrib Energy_per_window_y[0]    -0.021815959157938398
+    Attrib Energy_per_window_y[1]    -0.04754280542770999
+    Attrib Energy_total_y    0.005283592473318045
+    Attrib Entropy_per_window_y[0]    -0.17646708163198294
+    Attrib Entropy_per_window_y[1]    0.10906673435151307
+    Attrib Entropy_total_y    -0.30449322658262207
+    Attrib DC_per_window_x[0]    -0.27325185243616834
+    Attrib DC_per_window_x[1]    0.18158197235316648
+    Attrib DC_total_x    0.013978262141058012
+    Attrib Energy_per_window_x[0]    -0.3575132049617803
+    Attrib Energy_per_window_x[1]    0.18073809619545012
+    Attrib Energy_total_x    -0.2758368223218708
+    Attrib Entropy_per_window_x[0]    -0.20015688117472757
+    Attrib Entropy_per_window_x[1]    0.25380747989535907
+    Attrib Entropy_total_x    0.2020690476454631
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -0.15020050534621
+    Attrib XY_correl    -0.08241488779254616
+    Attrib XZ_correl    0.11775737611905975
+    Attrib YZ_correl    -0.08932669677352012
+    Attrib XY_cross_product_per_window[0]    0.023703968087721575
+    Attrib XY_cross_product_per_window[1]    -0.004764401300891331
+    Attrib XZ_cross_product_per_window[0]    0.06558300958577287
+    Attrib XZ_cross_product_per_window[1]    -0.012886935622375608
+    Attrib YZ_cross_product_per_window[0]    0.04074966697435703
+    Attrib YZ_cross_product_per_window[1]    -0.033058525214112004
+    Attrib XY_cross_product_total    0.05957455715811217
+    Attrib XZ_cross_product_total    -0.03697167880779522
+    Attrib YZ_cross_product_total    0.026621661314506696
+    Attrib DC_per_window_z[0]    -0.03176765093218537
+    Attrib DC_per_window_z[1]    0.07552526264346746
+    Attrib DC_total_z    0.059341564169430955
+    Attrib Energy_per_window_z[0]    0.05565684481234776
+    Attrib Energy_per_window_z[1]    0.028966160730500866
+    Attrib Energy_total_z    0.02955130295122084
+    Attrib Entropy_per_window_z[0]    0.024529034918643864
+    Attrib Entropy_per_window_z[1]    -0.05070471951378452
+    Attrib Entropy_total_z    -0.08846188905379633
+    Attrib DC_per_window_y[0]    0.0225593865393787
+    Attrib DC_per_window_y[1]    0.06518880933146869
+    Attrib DC_total_y    0.03232181772442444
+    Attrib Energy_per_window_y[0]    0.02553884123913014
+    Attrib Energy_per_window_y[1]    0.03803440819954623
+    Attrib Energy_total_y    -0.029475566225361884
+    Attrib Entropy_per_window_y[0]    0.015282735400392466
+    Attrib Entropy_per_window_y[1]    -0.02574514575763224
+    Attrib Entropy_total_y    -0.09433273799491411
+    Attrib DC_per_window_x[0]    0.04882857548883034
+    Attrib DC_per_window_x[1]    0.07983947028729539
+    Attrib DC_total_x    0.07999191357659906
+    Attrib Energy_per_window_x[0]    0.042117752556837945
+    Attrib Energy_per_window_x[1]    0.09427975158203487
+    Attrib Energy_total_x    -0.03764586775321331
+    Attrib Entropy_per_window_x[0]    0.00864251018385512
+    Attrib Entropy_per_window_x[1]    -0.02130086936741224
+    Attrib Entropy_total_x    -0.016204800657303592
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    0.8718864165581455
+    Attrib XY_correl    0.7472484488481713
+    Attrib XZ_correl    -2.5398563947401342
+    Attrib YZ_correl    2.33335452406866
+    Attrib XY_cross_product_per_window[0]    -0.0907086195433149
+    Attrib XY_cross_product_per_window[1]    0.2774178669827677
+    Attrib XZ_cross_product_per_window[0]    0.11342613387982659
+    Attrib XZ_cross_product_per_window[1]    -0.06905446976593499
+    Attrib YZ_cross_product_per_window[0]    -0.10325893898412293
+    Attrib YZ_cross_product_per_window[1]    0.49878103435064336
+    Attrib XY_cross_product_total    -0.43979349219204616
+    Attrib XZ_cross_product_total    0.3928228569200739
+    Attrib YZ_cross_product_total    -0.22651784535799635
+    Attrib DC_per_window_z[0]    1.4703185576580704
+    Attrib DC_per_window_z[1]    -0.36225721013060386
+    Attrib DC_total_z    -1.1261995597050203
+    Attrib Energy_per_window_z[0]    -0.4337860221140219
+    Attrib Energy_per_window_z[1]    0.5799803090251612
+    Attrib Energy_total_z    0.4646995748922759
+    Attrib Entropy_per_window_z[0]    -0.7176417329478731
+    Attrib Entropy_per_window_z[1]    0.4663462350828295
+    Attrib Entropy_total_z    -0.0714036968875451
+    Attrib DC_per_window_y[0]    0.11112564708863787
+    Attrib DC_per_window_y[1]    -0.247310735660365
+    Attrib DC_total_y    0.2145606462940897
+    Attrib Energy_per_window_y[0]    0.05645143649402985
+    Attrib Energy_per_window_y[1]    -0.0789461364295412
+    Attrib Energy_total_y    0.10988149426246335
+    Attrib Entropy_per_window_y[0]    0.3978920168448271
+    Attrib Entropy_per_window_y[1]    -0.05827391355161749
+    Attrib Entropy_total_y    0.8122574825833574
+    Attrib DC_per_window_x[0]    0.7182963195346558
+    Attrib DC_per_window_x[1]    -0.564217431026999
+    Attrib DC_total_x    -0.04866455980242508
+    Attrib Energy_per_window_x[0]    0.8147245780715713
+    Attrib Energy_per_window_x[1]    -0.43302277050990723
+    Attrib Energy_total_x    0.6645689762056263
+    Attrib Entropy_per_window_x[0]    0.5970845672120199
+    Attrib Entropy_per_window_x[1]    -0.638896673156738
+    Attrib Entropy_total_x    -0.4166509186630963
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    0.2832413059157453
+    Attrib XY_correl    0.27551655470527714
+    Attrib XZ_correl    -1.0575082151044244
+    Attrib YZ_correl    0.9266901660889421
+    Attrib XY_cross_product_per_window[0]    0.006309738387424384
+    Attrib XY_cross_product_per_window[1]    0.0863655652927739
+    Attrib XZ_cross_product_per_window[0]    0.10900518489371007
+    Attrib XZ_cross_product_per_window[1]    -0.042970558024896334
+    Attrib YZ_cross_product_per_window[0]    -0.09201484931123025
+    Attrib YZ_cross_product_per_window[1]    0.13054348698213405
+    Attrib XY_cross_product_total    -0.1635015190444122
+    Attrib XZ_cross_product_total    0.14411861901763734
+    Attrib YZ_cross_product_total    -0.1306810146344856
+    Attrib DC_per_window_z[0]    0.6719964947816727
+    Attrib DC_per_window_z[1]    -0.14070788812295995
+    Attrib DC_total_z    -0.4534131544936831
+    Attrib Energy_per_window_z[0]    -0.1332558155199701
+    Attrib Energy_per_window_z[1]    0.249269398146151
+    Attrib Energy_total_z    0.1844743954379104
+    Attrib Entropy_per_window_z[0]    -0.28524952053051267
+    Attrib Entropy_per_window_z[1]    0.20839550795977332
+    Attrib Entropy_total_z    -0.0855935477539917
+    Attrib DC_per_window_y[0]    0.08630045921854013
+    Attrib DC_per_window_y[1]    -0.11898292847443755
+    Attrib DC_total_y    0.09459339613731879
+    Attrib Energy_per_window_y[0]    0.023351920583380485
+    Attrib Energy_per_window_y[1]    -0.018606356710170947
+    Attrib Energy_total_y    0.08422385827700689
+    Attrib Entropy_per_window_y[0]    0.10825079723629454
+    Attrib Entropy_per_window_y[1]    -0.027829358903848963
+    Attrib Entropy_total_y    0.2633306768073826
+    Attrib DC_per_window_x[0]    0.3617744170295432
+    Attrib DC_per_window_x[1]    -0.20008752656838796
+    Attrib DC_total_x    0.025075591938652036
+    Attrib Energy_per_window_x[0]    0.3853503265920625
+    Attrib Energy_per_window_x[1]    -0.14962101828268246
+    Attrib Energy_total_x    0.28773801447070624
+    Attrib Entropy_per_window_x[0]    0.2593016209954542
+    Attrib Entropy_per_window_x[1]    -0.24625970943101677
+    Attrib Entropy_total_x    -0.06704330567335924
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    0.43653681537546835
+    Attrib XY_correl    0.3513356158928038
+    Attrib XZ_correl    -1.3991598824896296
+    Attrib YZ_correl    1.279523452321689
+    Attrib XY_cross_product_per_window[0]    -0.055684254081751094
+    Attrib XY_cross_product_per_window[1]    0.1793002123249814
+    Attrib XZ_cross_product_per_window[0]    0.12955792482339284
+    Attrib XZ_cross_product_per_window[1]    -0.011171846177271861
+    Attrib YZ_cross_product_per_window[0]    -0.06697281037866695
+    Attrib YZ_cross_product_per_window[1]    0.23939513321784486
+    Attrib XY_cross_product_total    -0.24449825101334868
+    Attrib XZ_cross_product_total    0.2352698251720691
+    Attrib YZ_cross_product_total    -0.09255176822683688
+    Attrib DC_per_window_z[0]    0.831883534288598
+    Attrib DC_per_window_z[1]    -0.1976815925304162
+    Attrib DC_total_z    -0.6111826988127314
+    Attrib Energy_per_window_z[0]    -0.19533858993880215
+    Attrib Energy_per_window_z[1]    0.2983547727452696
+    Attrib Energy_total_z    0.22521307636020954
+    Attrib Entropy_per_window_z[0]    -0.43485978064505704
+    Attrib Entropy_per_window_z[1]    0.26899728258826233
+    Attrib Entropy_total_z    -0.03261391597961731
+    Attrib DC_per_window_y[0]    0.05872084720094152
+    Attrib DC_per_window_y[1]    -0.12249220917162391
+    Attrib DC_total_y    0.11067672640486913
+    Attrib Energy_per_window_y[0]    0.022877879421589656
+    Attrib Energy_per_window_y[1]    -0.08092326584185641
+    Attrib Energy_total_y    0.031594364239966956
+    Attrib Entropy_per_window_y[0]    0.18493317329157474
+    Attrib Entropy_per_window_y[1]    -0.02644936103609804
+    Attrib Entropy_total_y    0.38215305524241555
+    Attrib DC_per_window_x[0]    0.3591907286360509
+    Attrib DC_per_window_x[1]    -0.227224981657458
+    Attrib DC_total_x    -0.045801929223036476
+    Attrib Energy_per_window_x[0]    0.5275103738422617
+    Attrib Energy_per_window_x[1]    -0.1921845431663309
+    Attrib Energy_total_x    0.35900801939328264
+    Attrib Entropy_per_window_x[0]    0.32310585243737633
+    Attrib Entropy_per_window_x[1]    -0.38977069342609927
+    Attrib Entropy_total_x    -0.19257489538984482
+Sigmoid Node 19
+    Inputs    Weights
+    Threshold    1.0620876804565151
+    Attrib XY_correl    0.833576405635737
+    Attrib XZ_correl    -2.9503211979501454
+    Attrib YZ_correl    2.77187450387888
+    Attrib XY_cross_product_per_window[0]    -0.1355082154004107
+    Attrib XY_cross_product_per_window[1]    0.3459876354609633
+    Attrib XZ_cross_product_per_window[0]    0.15244150284645366
+    Attrib XZ_cross_product_per_window[1]    -0.04297391133102078
+    Attrib YZ_cross_product_per_window[0]    -0.17996534477920445
+    Attrib YZ_cross_product_per_window[1]    0.5613655845069917
+    Attrib XY_cross_product_total    -0.5288878768112791
+    Attrib XZ_cross_product_total    0.4420797570817403
+    Attrib YZ_cross_product_total    -0.2846620111742424
+    Attrib DC_per_window_z[0]    1.8028978598624896
+    Attrib DC_per_window_z[1]    -0.4541735429329792
+    Attrib DC_total_z    -1.298268833154563
+    Attrib Energy_per_window_z[0]    -0.4554518004137518
+    Attrib Energy_per_window_z[1]    0.6592339084579436
+    Attrib Energy_total_z    0.553075442693958
+    Attrib Entropy_per_window_z[0]    -0.8284212233236268
+    Attrib Entropy_per_window_z[1]    0.5868150346751045
+    Attrib Entropy_total_z    -0.0680168791937502
+    Attrib DC_per_window_y[0]    0.16344855101613462
+    Attrib DC_per_window_y[1]    -0.2637470182707892
+    Attrib DC_total_y    0.22549926658778335
+    Attrib Energy_per_window_y[0]    0.08589135387199394
+    Attrib Energy_per_window_y[1]    -0.11398284645260234
+    Attrib Energy_total_y    0.10606144825021246
+    Attrib Entropy_per_window_y[0]    0.4431393700322862
+    Attrib Entropy_per_window_y[1]    -0.07589253325787186
+    Attrib Entropy_total_y    1.0079484514777082
+    Attrib DC_per_window_x[0]    0.8173347321781765
+    Attrib DC_per_window_x[1]    -0.6435827543991643
+    Attrib DC_total_x    -0.09652621893349371
+    Attrib Energy_per_window_x[0]    0.9918917853556334
+    Attrib Energy_per_window_x[1]    -0.5472321644248038
+    Attrib Energy_total_x    0.7882105737633679
+    Attrib Entropy_per_window_x[0]    0.7376495521235503
+    Attrib Entropy_per_window_x[1]    -0.7906653304907267
+    Attrib Entropy_total_x    -0.4627996603765078
+Sigmoid Node 20
+    Inputs    Weights
+    Threshold    -0.10574197395781473
+    Attrib XY_correl    -0.03506308031645579
+    Attrib XZ_correl    -0.12017186540208688
+    Attrib YZ_correl    0.04596914803100877
+    Attrib XY_cross_product_per_window[0]    0.09230739389591236
+    Attrib XY_cross_product_per_window[1]    0.03558213660195105
+    Attrib XZ_cross_product_per_window[0]    0.13651433750263206
+    Attrib XZ_cross_product_per_window[1]    -0.027406918763142184
+    Attrib YZ_cross_product_per_window[0]    0.07455231635005391
+    Attrib YZ_cross_product_per_window[1]    -0.033571904786605856
+    Attrib XY_cross_product_total    0.024829099771665926
+    Attrib XZ_cross_product_total    0.04372198529877745
+    Attrib YZ_cross_product_total    -0.013872572618168957
+    Attrib DC_per_window_z[0]    0.10497286447947299
+    Attrib DC_per_window_z[1]    0.027799864188149125
+    Attrib DC_total_z    -0.006089428348763838
+    Attrib Energy_per_window_z[0]    0.08643956180628004
+    Attrib Energy_per_window_z[1]    0.026566894432820554
+    Attrib Energy_total_z    0.0812559948518818
+    Attrib Entropy_per_window_z[0]    -0.09182493967384969
+    Attrib Entropy_per_window_z[1]    -0.03318935177116195
+    Attrib Entropy_total_z    -0.10880744904682711
+    Attrib DC_per_window_y[0]    0.11111804191373092
+    Attrib DC_per_window_y[1]    0.09312130629969533
+    Attrib DC_total_y    0.08268331386984211
+    Attrib Energy_per_window_y[0]    0.08935268022982648
+    Attrib Energy_per_window_y[1]    0.06427411653411085
+    Attrib Energy_total_y    0.004781119827583213
+    Attrib Entropy_per_window_y[0]    0.046407188376698244
+    Attrib Entropy_per_window_y[1]    -0.06933811233315297
+    Attrib Entropy_total_y    -0.03978233725983229
+    Attrib DC_per_window_x[0]    0.13300823387498178
+    Attrib DC_per_window_x[1]    0.07989431203963675
+    Attrib DC_total_x    0.051675790559379424
+    Attrib Energy_per_window_x[0]    0.17214309373117062
+    Attrib Energy_per_window_x[1]    0.08819353465666199
+    Attrib Energy_total_x    0.05824071872801065
+    Attrib Entropy_per_window_x[0]    0.09366996328209994
+    Attrib Entropy_per_window_x[1]    -0.061247294783380625
+    Attrib Entropy_total_x    0.0146528924849069
+Sigmoid Node 21
+    Inputs    Weights
+    Threshold    -0.08489862840008656
+    Attrib XY_correl    -0.0962817259945029
+    Attrib XZ_correl    0.1953576935134458
+    Attrib YZ_correl    -0.16590500720733065
+    Attrib XY_cross_product_per_window[0]    0.07857556344586152
+    Attrib XY_cross_product_per_window[1]    0.011248775971501472
+    Attrib XZ_cross_product_per_window[0]    -0.026560549894731684
+    Attrib XZ_cross_product_per_window[1]    0.02770253808026195
+    Attrib YZ_cross_product_per_window[0]    0.012979170267867865
+    Attrib YZ_cross_product_per_window[1]    -0.058860298960284954
+    Attrib XY_cross_product_total    0.019588325400228215
+    Attrib XZ_cross_product_total    -0.011599330428296719
+    Attrib YZ_cross_product_total    0.051516261874851386
+    Attrib DC_per_window_z[0]    -0.15389170784476164
+    Attrib DC_per_window_z[1]    0.08526939291008497
+    Attrib DC_total_z    0.05397969545944552
+    Attrib Energy_per_window_z[0]    0.07882172178986104
+    Attrib Energy_per_window_z[1]    0.010277865749608036
+    Attrib Energy_total_z    -0.05750451692702124
+    Attrib Entropy_per_window_z[0]    0.022692289388381543
+    Attrib Entropy_per_window_z[1]    -0.06333595583603295
+    Attrib Entropy_total_z    -0.05131558529359256
+    Attrib DC_per_window_y[0]    0.011957909551386814
+    Attrib DC_per_window_y[1]    0.01702119397054569
+    Attrib DC_total_y    -0.010726107383537652
+    Attrib Energy_per_window_y[0]    0.08535912493548377
+    Attrib Energy_per_window_y[1]    0.009211694168181055
+    Attrib Energy_total_y    0.039803142091946055
+    Attrib Entropy_per_window_y[0]    -0.01743249313666868
+    Attrib Entropy_per_window_y[1]    0.029619001961764358
+    Attrib Entropy_total_y    -0.08601403157741552
+    Attrib DC_per_window_x[0]    -0.016418143807164852
+    Attrib DC_per_window_x[1]    0.08153781025333552
+    Attrib DC_total_x    -0.009915240601329145
+    Attrib Energy_per_window_x[0]    -0.041467585611046305
+    Attrib Energy_per_window_x[1]    0.1107204579863945
+    Attrib Energy_total_x    -0.02806043433111118
+    Attrib Entropy_per_window_x[0]    0.019645874290549176
+    Attrib Entropy_per_window_x[1]    -0.002573760653634185
+    Attrib Entropy_total_x    0.06245769217772244
+Class 1
+    Input
+    Node 0
+Class 2
+    Input
+    Node 1
+
+
+Time taken to build model: 1.32 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         107               89.1667 %
+Incorrectly Classified Instances        13               10.8333 %
+Kappa statistic                          0.7833
+Mean absolute error                      0.1409
+Root mean squared error                  0.3286
+Relative absolute error                 28.173  %
+Root relative squared error             65.7242 %
+Total Number of Instances              120     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,900    0,117    0,885      0,900    0,893      0,783    0,923     0,923     1
+                 0,883    0,100    0,898      0,883    0,891      0,783    0,923     0,919     2
+Weighted Avg.    0,892    0,108    0,892      0,892    0,892      0,783    0,923     0,921     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 54  6 |  a = 1
+  7 53 |  b = 2
+
+
