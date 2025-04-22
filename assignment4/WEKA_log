@@ -1,0 +1,58 @@
+Best performer: Gaussian Process Regression configuration 2 - WEKA output
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.functions.GaussianProcesses -- -L 5.0 -N 0 -K "weka.classifiers.functions.supportVector.RBFKernel -C 250007 -G 0.01" -S 1
+Relation:     trainset-weka.filters.unsupervised.attribute.Remove-R4-5
+Instances:    5265
+Attributes:   4
+              Z1
+              Y1
+              X1
+              X2
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+Gaussian Processes
+
+Kernel used:
+  RBF Kernel: K(x,y) = exp(-0.01*(x-y)^2)
+
+All values shown based on: Normalize training data
+
+Average Target Value : 0.6225849537588576
+Inverted Covariance Matrix:
+    Lowest Value = -2.05039000279511E-5
+    Highest Value = 0.03999241499410428
+Inverted Covariance Matrix * Target-value Vector:
+    Lowest Value = -0.02488651164923377
+    Highest Value = 0.01504672269490366
+ 
+
+Attribute mappings:
+
+Model attributes	    Incoming attributes
+----------------	    ----------------
+(numeric) Z1    	--> 1 (numeric) Z1
+(numeric) Y1    	--> 2 (numeric) Y1
+(numeric) X1    	--> 3 (numeric) X1
+(numeric) X2    	--> 6 (numeric) X2
+
+
+Time taken to build model: 287.97 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.55 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.0082
+Mean absolute error                      0.6425
+Root mean squared error                  0.7953
+Relative absolute error                100.0176 %
+Root relative squared error             99.9962 %
+Total Number of Instances             1317     
+
