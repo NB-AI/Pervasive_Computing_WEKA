@@ -1,0 +1,153 @@
+16:18:29: Weka Explorer
+16:18:29: (c) 1999-2022 The University of Waikato, Hamilton, New Zealand
+16:18:29: web: https://www.cs.waikato.ac.nz/~ml/weka/
+16:18:29: Started on Montag, 4 Dezember 2023
+16:19:10: Base relation is now firstset (2641 instances)
+16:19:26: Command: weka.filters.unsupervised.attribute.Remove -R 3343-3346
+16:19:26: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R3343-3346 (2641 instances)
+16:21:23: Started weka.classifiers.functions.MultilayerPerceptron
+16:21:23: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.0 -N 10 -V 0 -S 0 -E 20 -H 3 -batch-size 4
+16:23:18: Finished weka.classifiers.functions.MultilayerPerceptron
+16:23:19: Warning : data contains more attributes than can be displayed as attribute bars.
+16:23:52: Base relation is now firstset (3050 instances)
+16:24:20: Command: weka.filters.unsupervised.attribute.Remove -R 3343-3346
+16:24:20: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R3343-3346 (3050 instances)
+16:24:25: Started weka.classifiers.functions.MultilayerPerceptron
+16:24:25: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.0 -N 10 -V 0 -S 0 -E 20 -H 3 -batch-size 4
+16:26:30: Finished weka.classifiers.functions.MultilayerPerceptron
+16:26:31: Warning : data contains more attributes than can be displayed as attribute bars.
+16:28:21: Base relation is now firstset (2641 instances)
+16:31:36: Command: weka.filters.unsupervised.attribute.Remove -R 3343-3346
+16:31:36: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R3343-3346 (2641 instances)
+16:32:01: Started weka.classifiers.functions.MultilayerPerceptron
+16:32:01: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.0 -N 20 -V 0 -S 0 -E 20 -H 3 -batch-size 4
+16:37:07: Finished weka.classifiers.functions.MultilayerPerceptron
+16:37:07: Warning : data contains more attributes than can be displayed as attribute bars.
+16:37:49: Started weka.classifiers.functions.MultilayerPerceptron
+16:37:49: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.0 -N 50 -V 0 -S 0 -E 20 -H 3 -batch-size 4
+16:48:56: Finished weka.classifiers.functions.MultilayerPerceptron
+16:48:57: Warning : data contains more attributes than can be displayed as attribute bars.
+16:59:54: Started weka.classifiers.functions.MultilayerPerceptron
+16:59:54: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.0 -N 100 -V 0 -S 0 -E 20 -H 3 -batch-size 4
+17:28:53: Finished weka.classifiers.functions.MultilayerPerceptron
+17:28:54: Warning : data contains more attributes than can be displayed as attribute bars.
+17:40:35: Started weka.classifiers.functions.MultilayerPerceptron
+17:40:35: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.05 -M 0.0 -N 20 -V 0 -S 0 -E 20 -H 3 -batch-size 4
+17:46:37: Finished weka.classifiers.functions.MultilayerPerceptron
+17:46:38: Warning : data contains more attributes than can be displayed as attribute bars.
+17:48:29: Started weka.classifiers.functions.MultilayerPerceptron
+17:48:29: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.0 -N 20 -V 0 -S 0 -E 20 -H 6 -batch-size 4
+17:57:30: Finished weka.classifiers.functions.MultilayerPerceptron
+17:57:31: Warning : data contains more attributes than can be displayed as attribute bars.
+18:03:43: Started weka.classifiers.functions.MultilayerPerceptron
+18:03:43: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.0 -N 20 -V 0 -S 0 -E 20 -H 12 -batch-size 4
+18:21:28: Finished weka.classifiers.functions.MultilayerPerceptron
+18:21:28: Warning : data contains more attributes than can be displayed as attribute bars.
+18:34:08: Started weka.classifiers.functions.MultilayerPerceptron
+18:34:08: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.0 -N 20 -V 0 -S 0 -E 20 -H 8 -batch-size 4
+18:52:14: Finished weka.classifiers.functions.MultilayerPerceptron
+18:52:15: Warning : data contains more attributes than can be displayed as attribute bars.
+18:54:58: Started weka.classifiers.functions.MultilayerPerceptron
+18:54:58: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.0 -N 20 -V 0 -S 0 -E 20 -H 6 -batch-size 32
+19:07:37: Finished weka.classifiers.functions.MultilayerPerceptron
+19:07:37: Warning : data contains more attributes than can be displayed as attribute bars.
+19:08:23: Started weka.classifiers.functions.MultilayerPerceptron
+19:08:23: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.0 -N 20 -V 0 -S 0 -E 20 -H 6 -batch-size 2
+19:19:59: Finished weka.classifiers.functions.MultilayerPerceptron
+19:19:59: Warning : data contains more attributes than can be displayed as attribute bars.
+19:21:45: Base relation is now firstset (3050 instances)
+19:22:00: Command: weka.filters.unsupervised.attribute.Remove -R 3343-3346
+19:22:01: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R3343-3346 (3050 instances)
+19:22:28: Started weka.classifiers.functions.MultilayerPerceptron
+19:22:28: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.0 -N 20 -V 0 -S 0 -E 20 -H 6 -batch-size 4
+19:35:15: Finished weka.classifiers.functions.MultilayerPerceptron
+19:35:16: Warning : data contains more attributes than can be displayed as attribute bars.
+23:27:04: Base relation is now firstset (2641 instances)
+23:28:19: Command: weka.filters.unsupervised.attribute.Remove -R 838-841
+23:28:19: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R838-841 (2641 instances)
+23:29:46: Started weka.classifiers.bayes.NaiveBayes
+23:29:46: Command: weka.classifiers.bayes.NaiveBayes 
+23:29:59: Finished weka.classifiers.bayes.NaiveBayes
+23:30:00: Warning : data contains more attributes than can be displayed as attribute bars.
+23:31:03: Base relation is now firstset (3050 instances)
+23:31:12: Command: weka.filters.unsupervised.attribute.Remove -R 838-841
+23:31:13: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R838-841 (3050 instances)
+23:31:22: Started weka.classifiers.bayes.NaiveBayes
+23:31:22: Command: weka.classifiers.bayes.NaiveBayes 
+23:31:32: Finished weka.classifiers.bayes.NaiveBayes
+23:31:33: Warning : data contains more attributes than can be displayed as attribute bars.
+23:32:48: Base relation is now firstset (2641 instances)
+23:32:58: Command: weka.filters.unsupervised.attribute.Remove -R 838-841
+23:32:58: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R838-841 (2641 instances)
+23:33:10: Started weka.classifiers.lazy.IBk
+23:33:10: Command: weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+23:33:11: Warning : data contains more attributes than can be displayed as attribute bars.
+23:33:56: Started weka.classifiers.lazy.IBk
+23:33:56: Command: weka.classifiers.lazy.IBk -K 3 -W 0 -I -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+23:34:42: Finished weka.classifiers.lazy.IBk
+23:34:43: Warning : data contains more attributes than can be displayed as attribute bars.
+23:35:55: Base relation is now firstset (3050 instances)
+23:36:02: Command: weka.filters.unsupervised.attribute.Remove -R 838-841
+23:36:02: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R838-841 (3050 instances)
+23:36:10: Started weka.classifiers.lazy.IBk
+23:36:10: Command: weka.classifiers.lazy.IBk -K 3 -W 0 -I -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+23:37:13: Finished weka.classifiers.lazy.IBk
+23:37:14: Warning : data contains more attributes than can be displayed as attribute bars.
+23:38:28: Base relation is now firstset (2641 instances)
+23:39:02: Command: weka.filters.unsupervised.attribute.Remove -R 838-841
+23:39:02: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R838-841 (2641 instances)
+23:40:30: Started weka.classifiers.functions.MultilayerPerceptron
+23:40:30: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.2 -N 20 -V 0 -S 0 -E 20 -H 6 -batch-size 4
+23:40:41: Interrupted weka.classifiers.functions.MultilayerPerceptron
+23:40:53: Started weka.classifiers.functions.MultilayerPerceptron
+23:40:53: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.0 -N 20 -V 0 -S 0 -E 20 -H 6 -batch-size 4
+23:43:01: Finished weka.classifiers.functions.MultilayerPerceptron
+23:43:02: Warning : data contains more attributes than can be displayed as attribute bars.
+23:43:35: Base relation is now firstset (3050 instances)
+23:43:44: Command: weka.filters.unsupervised.attribute.Remove -R 838-841
+23:43:44: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R838-841 (3050 instances)
+23:43:48: Started weka.classifiers.functions.MultilayerPerceptron
+23:43:48: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.0 -N 20 -V 0 -S 0 -E 20 -H 6 -batch-size 4
+23:46:07: Finished weka.classifiers.functions.MultilayerPerceptron
+23:46:08: Warning : data contains more attributes than can be displayed as attribute bars.
+23:52:26: Base relation is now firstset (2641 instances)
+23:52:34: Command: weka.filters.unsupervised.attribute.Remove -R 838-841
+23:52:34: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R838-841 (2641 instances)
+23:53:18: Started weka.classifiers.trees.J48
+23:53:18: Command: weka.classifiers.trees.J48 -C 0.25 -M 2
+23:54:28: Finished weka.classifiers.trees.J48
+23:54:29: Warning : data contains more attributes than can be displayed as attribute bars.
+23:55:18: Base relation is now firstset (3050 instances)
+23:55:27: Command: weka.filters.unsupervised.attribute.Remove -R 838-841
+23:55:27: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R838-841 (3050 instances)
+23:55:32: Started weka.classifiers.trees.J48
+23:55:32: Command: weka.classifiers.trees.J48 -C 0.25 -M 2
+23:59:58: Finished weka.classifiers.trees.J48
+23:59:58: Warning : data contains more attributes than can be displayed as attribute bars.
+00:35:53: Started weka.classifiers.bayes.NaiveBayes
+00:35:53: Command: weka.classifiers.bayes.NaiveBayes 
+00:35:54: Base relation is now firstset (2641 instances)
+00:36:10: Finished weka.classifiers.bayes.NaiveBayes
+00:36:11: Warning : data contains more attributes than can be displayed as attribute bars.
+00:37:21: Command: weka.filters.unsupervised.attribute.Remove -R 3343-3346
+00:37:21: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R3343-3346 (2641 instances)
+00:37:35: Started weka.classifiers.bayes.NaiveBayes
+00:37:35: Command: weka.classifiers.bayes.NaiveBayes 
+00:38:40: Finished weka.classifiers.bayes.NaiveBayes
+00:38:40: Warning : data contains more attributes than can be displayed as attribute bars.
+00:46:46: Started weka.classifiers.functions.MultilayerPerceptron
+00:46:46: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.0 -N 20 -V 0 -S 0 -E 20 -H 6 -batch-size 4
+01:01:29: Finished weka.classifiers.functions.MultilayerPerceptron
+01:01:29: Warning : data contains more attributes than can be displayed as attribute bars.
+01:03:20: Base relation is now firstset (3050 instances)
+01:05:23: Command: weka.filters.unsupervised.attribute.Remove -R 3343-3346
+01:05:24: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R3343-3346 (3050 instances)
+01:05:54: Started weka.classifiers.lazy.IBk
+01:05:54: Command: weka.classifiers.lazy.IBk -K 3 -W 0 -I -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+01:11:30: Finished weka.classifiers.lazy.IBk
+01:11:31: Warning : data contains more attributes than can be displayed as attribute bars.
+01:13:21: Started weka.classifiers.trees.J48
+01:13:21: Command: weka.classifiers.trees.J48 -C 0.5 -M 2
+01:13:55: Interrupted weka.classifiers.trees.J48
+01:14:03: Started weka.classifiers.trees.J48
+01:14:03: Command: weka.classifiers.trees.J48 -C 0.25 -M 2

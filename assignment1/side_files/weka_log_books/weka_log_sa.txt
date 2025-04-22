@@ -1,0 +1,204 @@
+16:28:10: Weka Explorer
+16:28:10: (c) 1999-2022 The University of Waikato, Hamilton, New Zealand
+16:28:10: web: https://www.cs.waikato.ac.nz/~ml/weka/
+16:28:10: Started on Samstag, 2 Dezember 2023
+16:28:44: Base relation is now firstset (2641 instances)
+17:16:24: Base relation is now firstset (5797 instances)
+17:19:24: Started weka.classifiers.rules.ZeroR
+17:19:24: Command: weka.classifiers.rules.ZeroR 
+17:19:25: Finished weka.classifiers.rules.ZeroR
+17:19:25: Warning : data contains more attributes than can be displayed as attribute bars.
+17:20:58: Started weka.classifiers.trees.RandomForest
+17:20:58: Command: weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+17:28:06: Finished weka.classifiers.trees.RandomForest
+17:28:06: Warning : data contains more attributes than can be displayed as attribute bars.
+17:38:29: Command: weka.filters.unsupervised.attribute.Remove -R 2615-2616
+17:38:35: Problem filtering instances: No space left on device
+17:39:03: Command: weka.filters.unsupervised.attribute.Remove -R 2615-2616
+17:39:04: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2615-2616 (5797 instances)
+18:26:49: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2614
+18:26:50: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2615-2616-weka.filters.unsupervised.attribute.Remove-R2613-2614 (5797 instances)
+19:10:11: Base relation is now firstset (2641 instances)
+19:10:48: Command: weka.filters.unsupervised.attribute.Remove -R 2615-2616
+19:10:49: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2615-2616 (2641 instances)
+19:11:16: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2614
+19:11:19: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2615-2616-weka.filters.unsupervised.attribute.Remove-R2613-2614 (2641 instances)
+19:11:45: Started weka.classifiers.bayes.NaiveBayes
+19:11:45: Command: weka.classifiers.bayes.NaiveBayes 
+19:12:23: Finished weka.classifiers.bayes.NaiveBayes
+19:12:24: Warning : data contains more attributes than can be displayed as attribute bars.
+19:13:56: Base relation is now firstset (2641 instances)
+19:51:34: Base relation is now firstset (3492 instances)
+20:01:02: Base relation is now firstset (2846 instances)
+20:04:09: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+20:04:10: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (2846 instances)
+20:04:54: Started weka.classifiers.bayes.NaiveBayes
+20:04:54: Command: weka.classifiers.bayes.NaiveBayes 
+20:05:27: Finished weka.classifiers.bayes.NaiveBayes
+20:05:28: Warning : data contains more attributes than can be displayed as attribute bars.
+20:15:55: Base relation is now firstset (3050 instances)
+20:16:43: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+20:16:44: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (3050 instances)
+20:16:55: Started weka.classifiers.bayes.NaiveBayes
+20:16:55: Command: weka.classifiers.bayes.NaiveBayes 
+20:17:30: Finished weka.classifiers.bayes.NaiveBayes
+20:17:31: Warning : data contains more attributes than can be displayed as attribute bars.
+20:20:27: Base relation is now firstset (2641 instances)
+20:20:36: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+20:20:36: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (2641 instances)
+21:41:18: Base relation is now firstset (2641 instances)
+21:41:26: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+21:41:26: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (2641 instances)
+21:46:25: Started weka.classifiers.lazy.IBk
+21:46:25: Command: weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+21:47:09: Finished weka.classifiers.lazy.IBk
+21:47:10: Warning : data contains more attributes than can be displayed as attribute bars.
+21:48:56: Base relation is now firstset (2846 instances)
+21:49:06: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+21:49:06: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (2846 instances)
+21:49:12: Started weka.classifiers.lazy.IBk
+21:49:12: Command: weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+21:50:30: Finished weka.classifiers.lazy.IBk
+21:50:30: Warning : data contains more attributes than can be displayed as attribute bars.
+21:50:51: Base relation is now firstset (3050 instances)
+21:50:58: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+21:50:58: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (3050 instances)
+21:51:06: Started weka.classifiers.lazy.IBk
+21:51:06: Command: weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+21:52:20: Finished weka.classifiers.lazy.IBk
+21:52:20: Warning : data contains more attributes than can be displayed as attribute bars.
+21:54:20: Base relation is now firstset (2641 instances)
+21:54:47: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+21:54:47: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (2641 instances)
+21:55:12: Started weka.classifiers.trees.J48
+21:55:12: Command: weka.classifiers.trees.J48 -C 0.25 -M 2
+21:59:17: Finished weka.classifiers.trees.J48
+21:59:17: Warning : data contains more attributes than can be displayed as attribute bars.
+21:59:49: Base relation is now firstset (2846 instances)
+22:00:39: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+22:00:39: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (2846 instances)
+22:00:48: Started weka.classifiers.trees.J48
+22:00:48: Command: weka.classifiers.trees.J48 -C 0.25 -M 2
+22:08:31: Finished weka.classifiers.trees.J48
+22:08:32: Warning : data contains more attributes than can be displayed as attribute bars.
+22:13:24: Base relation is now firstset (3050 instances)
+22:13:40: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+22:13:41: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (3050 instances)
+22:13:45: Started weka.classifiers.trees.J48
+22:13:45: Command: weka.classifiers.trees.J48 -C 0.25 -M 2
+22:22:18: Finished weka.classifiers.trees.J48
+22:22:19: Warning : data contains more attributes than can be displayed as attribute bars.
+22:33:13: Base relation is now firstset (2641 instances)
+22:39:29: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+22:39:30: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (2641 instances)
+22:39:51: Started weka.classifiers.functions.MultilayerPerceptron
+22:39:51: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+23:40:07: Interrupted weka.classifiers.functions.MultilayerPerceptron
+00:34:04: Base relation is now firstset (2641 instances)
+00:35:48: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+00:35:49: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (2641 instances)
+00:36:09: Started weka.classifiers.bayes.NaiveBayes
+00:36:09: Command: weka.classifiers.bayes.NaiveBayes 
+00:36:38: Finished weka.classifiers.bayes.NaiveBayes
+00:36:39: Warning : data contains more attributes than can be displayed as attribute bars.
+00:37:26: Base relation is now firstset (2846 instances)
+00:37:36: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+00:37:36: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (2846 instances)
+00:37:46: Started weka.classifiers.bayes.NaiveBayes
+00:37:46: Command: weka.classifiers.bayes.NaiveBayes 
+00:38:16: Finished weka.classifiers.bayes.NaiveBayes
+00:38:17: Warning : data contains more attributes than can be displayed as attribute bars.
+00:38:43: Base relation is now firstset (3050 instances)
+00:38:53: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+00:38:54: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (3050 instances)
+00:39:01: Started weka.classifiers.bayes.NaiveBayes
+00:39:01: Command: weka.classifiers.bayes.NaiveBayes 
+00:39:34: Finished weka.classifiers.bayes.NaiveBayes
+00:39:35: Warning : data contains more attributes than can be displayed as attribute bars.
+00:40:39: Base relation is now firstset (2641 instances)
+00:41:06: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+00:41:06: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (2641 instances)
+00:41:22: Started weka.classifiers.functions.MultilayerPerceptron
+00:41:22: Command: weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+01:01:42: Interrupted weka.classifiers.functions.MultilayerPerceptron
+01:02:24: Base relation is now firstset (2641 instances)
+01:02:32: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+01:02:34: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (2641 instances)
+01:02:49: Started weka.classifiers.bayes.NaiveBayes
+01:02:49: Command: weka.classifiers.bayes.NaiveBayes 
+01:03:58: Finished weka.classifiers.bayes.NaiveBayes
+01:03:59: Warning : data contains more attributes than can be displayed as attribute bars.
+01:11:42: Base relation is now firstset (2846 instances)
+01:12:15: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+01:12:17: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (2846 instances)
+01:12:29: Started weka.classifiers.bayes.NaiveBayes
+01:12:29: Command: weka.classifiers.bayes.NaiveBayes 
+01:13:41: Finished weka.classifiers.bayes.NaiveBayes
+01:13:42: Warning : data contains more attributes than can be displayed as attribute bars.
+01:17:24: Base relation is now firstset (3050 instances)
+01:17:38: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+01:17:39: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (3050 instances)
+01:17:45: Started weka.classifiers.bayes.NaiveBayes
+01:17:45: Command: weka.classifiers.bayes.NaiveBayes 
+01:18:17: Finished weka.classifiers.bayes.NaiveBayes
+01:18:18: Warning : data contains more attributes than can be displayed as attribute bars.
+01:18:43: Base relation is now firstset (2641 instances)
+01:18:50: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+01:18:50: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (2641 instances)
+01:19:08: Started weka.classifiers.lazy.IBk
+01:19:08: Command: weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+01:20:45: Finished weka.classifiers.lazy.IBk
+01:20:46: Warning : data contains more attributes than can be displayed as attribute bars.
+01:21:33: Base relation is now firstset (2846 instances)
+01:21:40: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+01:21:40: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (2846 instances)
+01:21:48: Started weka.classifiers.lazy.IBk
+01:21:48: Command: weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+01:23:44: Finished weka.classifiers.lazy.IBk
+01:23:44: Warning : data contains more attributes than can be displayed as attribute bars.
+01:26:59: Base relation is now firstset (3050 instances)
+01:27:24: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+01:27:25: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (3050 instances)
+01:27:32: Started weka.classifiers.lazy.IBk
+01:27:32: Command: weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+01:29:33: Finished weka.classifiers.lazy.IBk
+01:29:34: Warning : data contains more attributes than can be displayed as attribute bars.
+01:31:10: Base relation is now firstset (2641 instances)
+01:31:23: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+01:31:23: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (2641 instances)
+01:31:47: Started weka.classifiers.trees.J48
+01:31:47: Command: weka.classifiers.trees.J48 -C 0.25 -M 2
+01:38:27: Finished weka.classifiers.trees.J48
+01:38:28: Warning : data contains more attributes than can be displayed as attribute bars.
+01:38:58: Base relation is now firstset (2846 instances)
+01:39:45: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+01:39:45: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (2846 instances)
+01:39:52: Started weka.classifiers.trees.J48
+01:39:52: Command: weka.classifiers.trees.J48 -C 0.25 -M 2
+01:47:43: Finished weka.classifiers.trees.J48
+01:47:43: Warning : data contains more attributes than can be displayed as attribute bars.
+01:48:02: Base relation is now firstset (3050 instances)
+01:48:54: Command: weka.filters.unsupervised.attribute.Remove -R 2613-2616
+01:48:55: Base relation is now firstset-weka.filters.unsupervised.attribute.Remove-R2613-2616 (3050 instances)
+01:49:00: Started weka.classifiers.trees.J48
+01:49:00: Command: weka.classifiers.trees.J48 -C 0.25 -M 2
+01:58:44: Finished weka.classifiers.trees.J48
+01:58:45: Warning : data contains more attributes than can be displayed as attribute bars.
+02:04:41: Saved model (19:11:45 - bayes.NaiveBayes) to file '_bayes_a.model'
+02:04:49: Saved model (20:04:54 - bayes.NaiveBayes) to file '_bayes_b.model'
+02:05:03: Saved model (20:16:55 - bayes.NaiveBayes) to file '_bayes_c.model'
+02:05:19: Saved model (21:46:25 - lazy.IBk) to file '_knn_a.model'
+02:05:40: Saved model (21:49:12 - lazy.IBk) to file '_knn_b.model'
+02:05:46: Saved model (21:51:06 - lazy.IBk) to file '_knn_c.model'
+02:05:56: Saved model (21:55:12 - trees.J48) to file '_tree_a.model'
+02:06:05: Saved model (22:00:48 - trees.J48) to file '_tree_b.model'
+02:06:11: Saved model (22:13:45 - trees.J48) to file '_tree_c.model'
+02:06:29: Saved model (01:02:49 - bayes.NaiveBayes) to file 'C_bayes_a.model'
+02:06:36: Saved model (01:12:29 - bayes.NaiveBayes) to file 'C_bayes_b.model'
+02:06:41: Saved model (01:17:45 - bayes.NaiveBayes) to file 'C_bayes_c.model'
+02:06:59: Saved model (01:19:08 - lazy.IBk) to file 'C_knn_a.model'
+02:07:06: Saved model (01:21:48 - lazy.IBk) to file 'C_knn_b.model'
+02:07:12: Saved model (01:27:32 - lazy.IBk) to file 'C_knn_c.model'
+02:07:20: Saved model (01:31:47 - trees.J48) to file 'C_tree_a.model'
+02:07:26: Saved model (01:39:52 - trees.J48) to file 'C_tree_b.model'
+02:07:31: Saved model (01:49:00 - trees.J48) to file 'C_tree_c.model'
